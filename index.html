@@ -1,41 +1,77 @@
 <!doctype html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Luxury Presence</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <script src="https://kit.fontawesome.com/b6e372330b.js" crossorigin="anonymous"></script>
+
 
     <link rel="stylesheet" href="styles.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="index.js"></script>
 
 
 </head>
 <body>
 
-<nav class="nav_container">
+<nav class="nav_container ">
     <div class="nav_selector">
+
         <img class="logo" src="assets/luxury_presence_logo-05_y48wgz.webp" alt="">
-        <img class="burger" src="assets/Hamburger_icon.png" alt="">
+
+        <button class="nav_toggle">
+            <svg class="burger" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 1792 1792" xml:space="preserve">
+                <path d="M1673.9,1363.2L1673.9,1363.2c0,52.3-42.4,94.3-94.3,94.3H212.7c-52.3,0-94.3-42.4-94.3-94.3l0,0 c0-52.3,42.4-94.3,94.3-94.3h1366.8C1631.5,1268.5,1673.9,1310.9,1673.9,1363.2z"/>
+                <path d="M1673.9,895.6L1673.9,895.6c0,52.3-42.4,94.3-94.3,94.3H213c-52.3,0-94.3-42.4-94.3-94.3l0,0c0-52.3,42.4-94.3,94.3-94.3 h1366.6C1631.5,800.8,1673.9,843.2,1673.9,895.6z"/>
+                <path d="M1673.9,427.9L1673.9,427.9c0,52.3-42.4,94.3-94.3,94.3H212.7c-52.3,0-94.3-42.4-94.3-94.3l0,0c0-52.3,42.4-94.3,94.3-94.3 h1366.8C1631.5,333.2,1673.9,375.6,1673.9,427.9z"/>
+            </svg>
+        </button>
+        <ul class="nav_links ">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Portfolio</a>
+            </li>
+            <li>
+                <a href="#">Testimonials</a>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+            </li>
+
+        </ul>
+
     </div>
 </nav>
 
-<header class="header_container">
+<header id="header" class="header_container">
     <div class="header_selector">
         <div class="header_box">
             <h1>Marketing Services</h1>
             <p>The Benefits of Working with a Luxury Presence Agent.</p>
         </div>
     </div>
-
+    <div class="header_gradient"></div>
     <img class="header_city" src="assets/city-no-background.png" alt="">
 </header>
 
-
 <div class="main_selector">
+
+    <div id="back_top" class="back_top">
+        <a href="#header">
+            <i class="fas fa-arrow-up fa-5x"></i>
+        </a>
+    </div>
 
     <div class="info_container">
 
@@ -67,7 +103,7 @@
 
             <div class="info_img-box-2">
                 <img class="white-box-2" src="assets/white-box.png" alt="">
-                <img src="assets/img_02.png" alt="">
+                <img class="parallax" src="assets/img_02.png" alt="">
             </div>
 
         </div>
@@ -96,6 +132,7 @@
                             for a
                             property such as yours.</p>
                     </div>
+
                 </div>
 
             </div>
@@ -143,8 +180,6 @@
                             property attractive to potential buyers.</p>
 
                     </div>
-
-
                 </div>
 
             </div>
@@ -181,25 +216,50 @@
                         <img src="assets/img_02.png" alt="">
                     </div>
 
-
                 </div>
 
             </div>
 
         </div>
+
     </div>
 
     <div id="footer" class="footer_container">
+
         <div class="footer_selector">
+
             <div class="footer_text">
                 <h1>WORK WITH US</h1>
                 <H3>Our expansive network and white-glove service ensure a bespoke experience for both buyers and
                     sellers across multiple markets.</H3>
             </div>
+
+            <div class="footer_icons">
+
+                <a href="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+                    </svg>
+                </a>
+                <a href="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"/>
+                    </svg>
+                </a>
+                <a href="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                </a>
+
+            </div>
         </div>
+
     </div>
 
 </div>
 
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="index.js"></script>
+
 </html>
