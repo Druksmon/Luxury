@@ -13,9 +13,9 @@ body {
 @font-face {
     /*font-family: "Averta CY W01";*/
     /*font-family: "Trajan Pro";*/
-    src: url("/assets/font/Averta-Bold.ttf");
-    src: url("/assets/font/Trajan-Pro.ttf");
-    src: url("/assets/font/TenorSans-Regular.ttf");
+    src: url("assets/font/Averta-Bold.ttf");
+    src: url("assets/font/Trajan-Pro.ttf");
+    src: url("assets/font/TenorSans-Regular.ttf");
 }
 
 
@@ -68,7 +68,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    background-image: url("/assets/background.jpg");
+    background-image: url("assets/background.jpg");
     background-size: cover;
     background-attachment: scroll;
 
